@@ -18,8 +18,6 @@ childFunc(void *arg)
 
     /* Change hostname in UTS namespace of child */
 
-    if (sethostname(arg, strlen(arg)) == -1)
-        errExit("sethostname");
 
     /* Retrieve and display hostname */
 
@@ -61,7 +59,7 @@ main(int argc, char *argv[])
     /* Create child that has its own UTS namespace;
       child commences execution in childFunc() */
 
-    pid = clone(childFunc, stackTop, CLONE_NEWUTS | SIGCHLD, argv[1]);
+    pid = clone(childFunc, stackTop, SIGCHLD, argv[1]);
     if (pid == -1)
         errExit("clone");
     printf("clone() returned %ld\n", (long) pid);
