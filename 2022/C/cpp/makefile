@@ -2,11 +2,9 @@
 
 cfiles 	:= $(wildcard *.cpp)
 cobjs 	:= $(patsubst %.cpp, %.out, $(cfiles))
-cflags 	:= -g
+cflags 	:= -g -std=c++11
 cc 			:= clang++
 all: $(cobjs)
-
-
 
 %.out: %.cpp
 	$(cc) $< -o $@ $(cflags)
