@@ -1,9 +1,12 @@
 
 
 #include <iostream>
+#include <bitset>
 
-
-void print(){}
+template<typename T>
+void print(const T& arg){
+  std::cout << arg;
+}
 
 template <typename T, typename... Types>
 void print(const T& firstArg, const Types&... args) {
@@ -13,6 +16,7 @@ void print(const T& firstArg, const Types&... args) {
 
 int main() {
 
-  print(1, 2, 3, 4, "hello world\n");
+  print(1, 2, 3, 4, "hello world", std::bitset<16>(377));
+  NULL;
   return 0;
 }
