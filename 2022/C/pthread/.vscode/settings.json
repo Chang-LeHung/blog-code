@@ -29,6 +29,8 @@
     "**/.vscode/**"
   ],
   "files.associations": {
-    "pthread.h": "c"
+    "pthread.h": "c",
+    "stdlib.h": "c",
+    "mman.h": "c"
   }
 }
