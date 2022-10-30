@@ -15,15 +15,20 @@ class A{
 class B:public A {
 
   public:
-    void start() {
+    virtual void start() {
       cout << "b\n";
+    }
+    template<typename T>
+    void out(T s) {
+      cout << s;
     }
 };
 
 int main() {
 
-  A *a = new A;
-  B* b = (B*) a;
+  B *b = new B;
+  b->out("hello world\n");
+  A* a = (A*) b;
   a->start();
   return 0;
 }
