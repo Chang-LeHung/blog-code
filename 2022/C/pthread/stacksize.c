@@ -9,10 +9,12 @@ int times = 1;
 u_int64_t rbp;
 
 void* func(void* arg) {
-  asm volatile(
-    "movq %%rbp, %0;"
-    :"=m"(rbp)::
-  );
+  #if __X86__
+      asm volatile(
+      "movq %%rbp, %0;"
+      :"=m"(rbp)::
+    );
+  #endif
   printf("times = %d rbp = %lx\n", times, rbp);
   times++;
   char s[1 << 20];
