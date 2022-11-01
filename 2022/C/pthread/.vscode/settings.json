@@ -32,6 +32,7 @@
     "pthread.h": "c",
     "stdlib.h": "c",
     "mman.h": "c",
-    "types.h": "c"
+    "types.h": "c",
+    "stdio.h": "c"
   }
 }
