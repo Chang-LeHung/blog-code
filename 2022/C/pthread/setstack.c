@@ -8,6 +8,8 @@
 #define STACK_SIZE 2 MiB
 
 int times = 0;
+
+static
 void* stack_overflow(void* args) {
   printf("times = %d\n", ++times);
   char s[1 << 20]; // 1 MiB
@@ -24,5 +26,6 @@ int main() {
   pthread_create(&t, &attr, stack_overflow, NULL);
   pthread_join(t, NULL);
   pthread_attr_destroy(&attr);
+  free(stack);
   return 0;
 }
