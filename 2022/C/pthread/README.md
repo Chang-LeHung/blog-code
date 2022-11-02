@@ -4,7 +4,6 @@ pthread resources：
 - https://www.oreilly.com/library/view/pthreads-programming/9781449364724/ch04.html#setting_thread_attributes
 - https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/aixprggd/genprogc/term_threads.htm
 
-
 Thread Basics:
 
 * Thread operations include thread creation, termination, synchronization (joins,blocking), scheduling, data management and process interaction.
@@ -25,3 +24,7 @@ Thread Basics:
   * priority
   * Return value: errno
 * pthread functions return "0" if OK.
+
+why not need to wake up a pthread_join thread ?
+
+https://stackoverflow.com/questions/73807754/how-one-pthread-waits-for-another-to-finish-via-futex-in-linux

@@ -18,8 +18,9 @@ int main() {
   void* res;
   pthread_t t1;
   pthread_create(&t1, NULL, task, NULL);
+  sleep(1);
   int s = pthread_cancel(t1);
-  if(s != 0) // s == 0 mean call successfully
+  if(s != 0)
     fprintf(stderr, "cancel failed\n");
   pthread_join(t1, &res);
   assert(res == PTHREAD_CANCELED);
