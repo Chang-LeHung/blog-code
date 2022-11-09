@@ -30,6 +30,12 @@
   ],
   "files.associations": {
     "pthread.h": "c",
-    "stdlib.h": "c"
+    "stdlib.h": "c",
+    "stdlib.h": "c",
+    "mman.h": "c",
+    "types.h": "c",
+    "stdio.h": "c",
+    "assert.h": "c",
+    "shm.h": "c"
   }
 }
