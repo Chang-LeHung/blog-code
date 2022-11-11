@@ -1,0 +1,21 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "pstree",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": true,
+      "program": "/home/huchang/blog-code/2022/C/system/proc/pstree.out",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "cwd": "/home/huchang/blog-code/2022/C/system/proc"
+    }
+
+  ]
+}
