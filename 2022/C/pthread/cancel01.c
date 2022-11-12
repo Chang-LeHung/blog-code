@@ -5,10 +5,12 @@
 #include <assert.h>
 #include <unistd.h>
 
+
+
 void* task(void* arg) {
-  pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS, NULL);
+  pthread_setcanceltype(PTHREAD_CANCEL_DEFERRED, NULL);
   while(1) {
-    
+    pthread_testcancel();
   }
   return NULL;
 }

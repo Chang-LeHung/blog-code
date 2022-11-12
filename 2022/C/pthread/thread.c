@@ -15,6 +15,7 @@ int main() {
   pthread_t t;
   pthread_create(&t, NULL, func, NULL);
   printf("主线程打印线程 t 的线程 id = %ld\n", *(long*)(&t));
+  printf("主线程打印线程 t 的线程 id = %ld\n", t);
   pthread_join(t, NULL);
   return 0;
 }

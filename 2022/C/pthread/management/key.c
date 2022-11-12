@@ -5,7 +5,7 @@
 
 void* func(void* arg) {
 
-  pid_t t = gettid();
+  pid_t t = getpid();
   printf("tid = %d\n", t);
   return NULL;
 }
