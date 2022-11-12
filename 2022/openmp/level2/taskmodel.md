@@ -8,14 +8,14 @@
   - 包含任务是最终任务的子孙任务。
   - find 指令的条件等于 true 的时候，任务成为 final 任务，任务将被线程立即执行不会将其放入到任务池当中进行调度。
 
-# 任务的语意
+## 任务的语意
 
 - 当线程遇到一个 task 子句的时候，一个显式的任务就会被创建，会有一个数据环境 (data environment) 和任务进行关联，当任务执行完成之后，与任务关联的数据环境就会被摧毁。
 - 如果在一个任务当中生成一个任务，这个内部任务并不是外部任务的一部分，除非这个内部任务是包含任务。
 - 当线程遇到一个任务的时候可以立即执行，也可以放到任务池当中进行调度然后再执行。
 - 每一个显式任务在他关联的代码块的最后有一个任务调度点，可以让改任务执行完成之后调度其他的任务
 
-# 任务调度
+## 任务调度
 
 任务调度点将任务区域分成不同的部分，每个部分的执行是不能够被打断的，不同的部分的执行顺序必须按照定义的顺序执行。当没有使用具有同步语意的指令时，不同的任务的执行顺序是没有规定的
 
@@ -26,7 +26,56 @@
 - 当一个线程遇到一个任务调度点的时候，恢复执行任何一个非绑定的任务。
 - 如果遇到上述情况的多个，选择哪一个没有规定！！！！
 
-# 任务调度的限制
+## 任务调度的限制
 
 - 一个依赖任务只有等到他的所有以来都满足之后才能够被调度。
 - 当一任务的互斥任务正在被执行，那么该任务不能够被调度。
+
+实验测试：
+
+一个线程在执行一个任务的时候不会切换到另外一个任务执行，不管是否是绑定任务还是非绑定任务！
+
+```c
+
+
+#include <stdio.h>
+#include <omp.h>
+#include <unistd.h>
+
+int turn = 1;
+
+int main() {
+  omp_set_num_threads(2);
+  #pragma omp parallel
+  {
+    printf("In tid = %d\n", omp_get_thread_num());
+    #pragma omp task untied
+    {
+      int data = 100;
+      printf("In 1st task before taskyield : data = %d\n", data);
+      while(turn == 1)
+      {
+        printf("tid = %d in yield 1\n", omp_get_thread_num());
+        sleep(1);
+        #pragma omp taskyield
+      }
+      printf("In 1st task after taskyield : data = %d\n", data);
+    }
+
+    #pragma omp task untied
+    {
+      int data = -100;
+      printf("In 2nd task before taskyield : data = %d\n", data);
+      while(turn == 2)
+      {
+        printf("tid = %d in yield 2\n", omp_get_thread_num());
+        sleep(1);
+        #pragma omp taskyield
+      }
+      turn = 2;
+      printf("In 2nd task after taskyield : data = %d\n", data);
+    }
+  }
+  return 0;
+}
+```
