@@ -6,7 +6,7 @@
         "${workspaceFolder}/**"
       ],
       "compilerPath": "/usr/bin/gcc",
-      "cStandard": "gnu11",
+      "cStandard": "gnu99",
       "cppStandard": "gnu++11",
       "intelliSenseMode": "linux-gcc-x64",
       "compilerArgs": [
