@@ -22,7 +22,7 @@ int main() {
 
   pthread_create(&t1, NULL, thread_1, NULL);
   sleep(1);
-  int ret = pthread_join(t1, NULL);
+  int ret = pthread_join(t2, NULL);
   if(ret == ESRCH)
     printf("No thread with the ID thread could be found.\n");
   else if(ret == EINVAL) {
