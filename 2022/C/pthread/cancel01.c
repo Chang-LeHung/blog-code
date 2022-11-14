@@ -9,8 +9,9 @@
 
 void* task(void* arg) {
   pthread_setcanceltype(PTHREAD_CANCEL_DEFERRED, NULL);
+  int a = 1;
   while(1) {
-    pthread_testcancel();
+    a++;
   }
   return NULL;
 }
@@ -23,6 +24,7 @@ int main() {
   int s = pthread_cancel(t1);
   if(s != 0) // s == 0 mean call successfully
     fprintf(stderr, "cancel failed\n");
+  printf("Hello World\n");
   pthread_join(t1, &res);
   assert(res == PTHREAD_CANCELED);
   return 0;
