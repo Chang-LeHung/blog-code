@@ -10,7 +10,7 @@ pthread_key_t key;
 
 void key_destructor1(void* arg) 
 {
-  printf("arg = %d\n", *(int*)arg);
+  printf("arg = %d thread id = %lu\n", *(int*)arg, pthread_self());
   free(arg);
 }
 
@@ -18,8 +18,9 @@ void key_destructor1(void* arg)
 void thread_local() 
 {
   int* q = pthread_getspecific(key);
-  printf("q == %d\n", *q);
+  printf("q == %d thread id = %lu\n", *q, pthread_self());
 }
+
 
 void* func1(void* arg)
 {
@@ -29,7 +30,6 @@ void* func1(void* arg)
   pthread_setspecific(key, s);
   thread_local();
   printf("Out func1\n");
-  sleep(2);
   return NULL;
 }
 
@@ -41,7 +41,6 @@ void* func2(void* arg)
   pthread_setspecific(key, s);
   thread_local();
   printf("Out func2\n");
-  sleep(2);
   return NULL;
 }
 
