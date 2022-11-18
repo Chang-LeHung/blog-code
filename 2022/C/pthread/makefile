@@ -1,6 +1,6 @@
 
 
-cfiles 	:= $(wildcard *.c management/*.c clone/*.c understandthread/*c)
+cfiles 	:= $(wildcard *.c management/*.c clone/*.c understandthread/*c specific/*c)
 cobjs 	:= $(patsubst %.c, %.out, $(cfiles))
 cflags 	:= -g -lpthread
 cc 			:= clang
