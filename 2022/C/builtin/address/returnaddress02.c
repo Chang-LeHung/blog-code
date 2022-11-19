@@ -11,21 +11,22 @@
       "movq %%rcx, %0;"           \
       :"=m"(rbp)::"rcx"           \
     );                            \
-    printf("From inline assembly return address = %p\n", (u_int64_t*)*(u_int64_t*)(rbp + 8));
+    printf("From inline assembly main return address = %p\n", (u_int64_t*)*(u_int64_t*)(rbp + 8));
 
 void func_a()
 {
-  printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n");
+  printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> In func_a\n");
   void* p = __builtin_return_address(1);
-  printf("fun_a return address = %p\n", p);
+  printf("main return address = %p\n", p);
   return_address
-  printf("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n");
+  printf("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Out func_a\n");
 }
 
 
 int main()
 {
   func_a();
-  printf("main address = %p\n", main);
+  void* p = __builtin_return_address(0);
+  printf("main function return address = %p\n", p);
   return 0;
 }

@@ -11,9 +11,11 @@ int lowbit2(int x)
 
 int main()
 {
-  int i = 15;
-  printf("bits = %d\n", __builtin_popcount(i));
-  for(int i = 0; i < 100; ++i)
+  // int i = -1;
+  // printf("bits = %d\n", __builtin_popcount(i));
+  // i = 15;
+  // printf("bits = %d\n", __builtin_popcount(i));
+  for(int i = 0; i < 16; ++i)
   {
     printf("macro = %d function = %d\n", lowbit(i), lowbit2(i));
   }

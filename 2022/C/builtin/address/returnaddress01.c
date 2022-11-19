@@ -11,6 +11,7 @@
 
 void func_a()
 {
+  printf("In func_a\n");
   void* p = __builtin_return_address(0);
   printf("fun_a return address = %p\n", p);
   return_address
@@ -18,9 +19,10 @@ void func_a()
 
 int main()
 {
+  printf("In main function\n");
   void* p = __builtin_return_address(0);
   printf("main return address = %p\n", p);
-  func_a();
   return_address
+  func_a();
   return 0;
 }

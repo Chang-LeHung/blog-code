@@ -2,7 +2,7 @@
 
 cfiles 	:= $(wildcard *.c address/*c)
 cobjs 	:= $(patsubst %.c, %.out, $(cfiles))
-cflags 	:= -g -lpthread
+cflags 	:= -g -lpthread -fopenmp
 cc 			:= clang
 all: $(cobjs)
 
