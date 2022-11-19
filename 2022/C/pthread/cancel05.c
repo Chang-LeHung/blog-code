@@ -1,6 +1,7 @@
 
 #include <stdio.h>
 #include <pthread.h>
+<<<<<<< HEAD
 #include <errno.h>
 
 int main() {

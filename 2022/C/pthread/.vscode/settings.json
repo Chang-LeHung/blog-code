@@ -38,6 +38,7 @@
     "shm.h": "c",
     "signal.h": "c",
     "stdatomic.h": "c",
-    "unistd.h": "c"
+    "unistd.h": "c",
+    "time.h": "c"
   }
 }
