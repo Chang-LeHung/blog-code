@@ -8,10 +8,10 @@
 
 
 void* task(void* arg) {
-  pthread_setcanceltype(PTHREAD_CANCEL_DEFERRED, NULL);
-  while(1) {
-    pthread_testcancel();
-  }
+  usleep(10);
+  printf("step1\n");
+  printf("step2\n");
+  printf("step3\n");
   return NULL;
 }
 

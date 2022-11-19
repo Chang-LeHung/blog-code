@@ -3,7 +3,7 @@
 cfiles 	:= $(wildcard *.c management/*.c clone/*.c understandthread/*c)
 cobjs 	:= $(patsubst %.c, %.out, $(cfiles))
 cflags 	:= -g -lpthread
-cc 			:= clang
+cc 			:= gcc
 all: $(cobjs)
 
 
