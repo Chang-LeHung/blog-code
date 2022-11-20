@@ -1,6 +1,8 @@
 {
   "files.associations": {
     "stat.h": "c",
-    "fcntl.h": "c"
+    "fcntl.h": "c",
+    "sstream": "c",
+    "ratio": "c"
   }
 }
