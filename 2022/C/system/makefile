@@ -1,6 +1,6 @@
 
 
-cfiles := $(wildcard *.c ./proc/*.c ./cextension/*.c ./prettyterminal/*c)
+cfiles := $(wildcard *.c ./proc/*.c ./cextension/*.c ansi/*c coroutine/*c)
 cobjs  := $(patsubst %.c, %.out, $(cfiles))
 cc     := clang
 cflags := -g -lpthread

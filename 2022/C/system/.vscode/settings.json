@@ -1,6 +1,14 @@
 {
   "files.associations": {
     "stat.h": "c",
-    "fcntl.h": "c"
+    "fcntl.h": "c",
+    "sstream": "c",
+    "ratio": "c",
+    "types.h": "c",
+    "coroutine.h": "c",
+    "ucontext.h": "c",
+    "stdlib.h": "c",
+    "bitset": "c",
+    "vector": "cpp"
   }
 }

@@ -5,16 +5,16 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "pstree",
+      "name": "coroutine",
       "type": "cppdbg",
       "request": "launch",
       "args": [],
       "stopAtEntry": true,
-      "program": "/home/huchang/blog-code/2022/C/system/proc/pstree.out",
+      "program": "/home/huchang/2022hnu/blog-code/2022/C/system/coroutine/coroutine.out",
       "environment": [],
       "externalConsole": false,
       "MIMode": "gdb",
-      "cwd": "/home/huchang/blog-code/2022/C/system/proc"
+      "cwd": "/home/huchang/2022hnu/blog-code/2022/C/system/coroutine/"
     }
 
   ]
