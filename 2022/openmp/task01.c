@@ -8,17 +8,11 @@
 
 int i = 1;
 int main() {
-
-  #pragma omp parallel num_threads(2)
-  { 
-    printf("Hello World\n");
+  omp_set_num_threads(2);
+  #pragma omp parallel for
+  for(int i = 0; i < 4; i++)
+  {
+    printf("i = %d tid = %d\n", i, omp_get_thread_num());
   }
-
-  printf("aaa\n");
-  #pragma omp parallel num_threads(2)
-  { 
-    printf("Hello World\n");
-  }
-
   return 0;
 }

@@ -9,6 +9,7 @@
     "ucontext.h": "c",
     "stdlib.h": "c",
     "bitset": "c",
-    "vector": "cpp"
+    "vector": "cpp",
+    "ioctl.h": "c"
   }
 }
