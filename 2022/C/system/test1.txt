@@ -1,1 +1,0 @@
-pid = 3733237 ppid = 3733106 si->si_pid = 3733106 signo = 1
