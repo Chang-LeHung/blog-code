@@ -1,6 +1,7 @@
 {
   "files.associations": {
     "stat.h": "c",
-    "fcntl.h": "c"
+    "fcntl.h": "c",
+    "omp.h": "c"
   }
 }

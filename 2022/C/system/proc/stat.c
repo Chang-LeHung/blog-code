@@ -1,22 +1,12 @@
 
-
-
-
 #include <stdio.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <unistd.h>
+#include <pthread.h>
+#include <errno.h>
 
-
-void get_info_from_unistd_api() {
-    printf("pid   = %d\n", getpid());
-    printf("ppid  = %d\n", getppid());
-    printf("pgrep = %d\n", getpgrp());
-    printf("sid   = %d\n", getsid(0));
-}
-
-int main(int argc, char **argv) {
-    get_info_from_unistd_api();
-    return 0;
+int main() {
+  pthread_t t;
+  int s = pthread_cancel(t);
+  if(s == ESRCH)
+    printf("No thread with the ID thread could be found.\n");
+  return 0;
 }

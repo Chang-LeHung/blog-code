@@ -5,16 +5,40 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "pstree",
+      "name": "stat",
       "type": "cppdbg",
       "request": "launch",
       "args": [],
+      // "miDebuggerServerAddress": "127.0.0.1:12345",
       "stopAtEntry": true,
-      "program": "/home/huchang/blog-code/2022/C/system/proc/pstree.out",
+      "program": "/home/lehung/workdir/blog-code/2022/C/system/proc/stat.out",
       "environment": [],
       "externalConsole": false,
       "MIMode": "gdb",
-      "cwd": "/home/huchang/blog-code/2022/C/system/proc"
+      "cwd": "/home/lehung/workdir/blog-code/2022/C/system",
+      "setupCommands": [
+        {
+          "text": "directory /home/lehung/glibc"
+        },
+      ]
+    },
+    {
+      "name": "demo01",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      // "miDebuggerServerAddress": "127.0.0.1:12345",
+      "stopAtEntry": true,
+      "program": "/home/lehung/workdir/blog-code/2022/C/system/demo01.out",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "cwd": "/home/lehung/workdir/blog-code/2022/C/system",
+      "setupCommands": [
+        {
+          "text": "directory /home/lehung/glibc"
+        },
+      ]
     }
 
   ]
