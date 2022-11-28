@@ -3,7 +3,7 @@ all_dir := $(shell python3 scan.py c)
 all_dir += ./*.c
 cfiles := $(wildcard $(all_dir))
 cobjs := $(patsubst %.c, %.out, $(cfiles))
-cc = clang
+cc = gcc
 cflags = -fopenmp -g -lm
 
 

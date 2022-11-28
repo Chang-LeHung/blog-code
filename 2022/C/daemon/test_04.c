@@ -12,7 +12,7 @@
 
 void sig(int no)
 {
-  int fd = open("./test1.txt", O_RDWR | O_CREAT);
+  int fd = open("./test1.txt", O_RDWR | O_CREAT, 0644);
   char *s = "Hello World\n";
   write(fd, s, strlen(s));
   fsync(fd);
@@ -22,7 +22,7 @@ void sig(int no)
 int main()
 {
   signal(SIGHUP, sig);
-  int fd = open("./test2.txt", O_WRONLY | O_CREAT);
+  int fd = open("./test2.txt", O_WRONLY | O_CREAT, 0644);
   char s[1024];
   while(1)
   {

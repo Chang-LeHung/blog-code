@@ -12,13 +12,16 @@ int main() {
   #pragma omp parallel num_threads(2)
   { 
     printf("Hello World\n");
+    #pragma omp task
+    {
+      printf("Hello World\n");
+      #pragma omp task
+      {
+        printf("Hello World\n");
+      }
+    }
   }
 
-  printf("aaa\n");
-  #pragma omp parallel num_threads(2)
-  { 
-    printf("Hello World\n");
-  }
 
   return 0;
 }

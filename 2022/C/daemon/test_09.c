@@ -23,20 +23,18 @@ void my_handler (int signo, siginfo_t *si, void*ucontext)
   _exit(0);
 }
 
-int main()
+int main()  
 {
   ppid = getppid();
   struct sigaction demo;
   demo.sa_handler = my_handler;
   demo.sa_flags |= SA_SIGINFO;
-  sigaction(SIGHUP, &demo, NULL);
-  int fd = open("./test2.txt", O_WRONLY | O_CREAT, 0644);
-  char s[1024];
+  sigaction(SIGTTIN, &demo, NULL);
   while(1)
   {
-    sprintf(s, "time = %lu\n", time(NULL));
-    write(fd, s, strlen(s));
-    int res = write(STDOUT_FILENO, s, strlen(s));
+    printf("1\n");
+    int id;
+    scanf("%d", &id);
     sleep(1);
   }
   return 0;
