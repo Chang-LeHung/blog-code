@@ -8,7 +8,6 @@
 
 int i = 1;
 int main() {
-
   #pragma omp parallel num_threads(2)
   { 
     printf("Hello World\n");
@@ -21,7 +20,5 @@ int main() {
       }
     }
   }
-
-
   return 0;
 }

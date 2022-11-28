@@ -2,14 +2,14 @@
 
 cfiles := $(wildcard *.c ./proc/*.c ./cextension/*.c ansi/*c coroutine/*c)
 cobjs  := $(patsubst %.c, %.out, $(cfiles))
-cc     := clang
-cflags := -g -lpthread
+cc     := gcc
+cflags := -g -lpthread -fopenmp
 all: $(cobjs)
 
 
 %.out: %.c
 
-	$(cc) $(cflags) $< -o $@
+	$(cc) $< -o $@ $(cflags)
 
 pdf: ./proc/pstree.dot ./proc/pstree.out
 	./proc/pstree.out > ./proc/pstree.dot

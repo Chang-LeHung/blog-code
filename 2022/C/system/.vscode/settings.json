@@ -2,6 +2,9 @@
   "files.associations": {
     "stat.h": "c",
     "fcntl.h": "c",
+<<<<<<< HEAD
+    "omp.h": "c"
+=======
     "sstream": "c",
     "ratio": "c",
     "types.h": "c",
@@ -9,6 +12,8 @@
     "ucontext.h": "c",
     "stdlib.h": "c",
     "bitset": "c",
-    "vector": "cpp"
+    "vector": "cpp",
+    "ioctl.h": "c"
+>>>>>>> 2b9e67027ce5c47942c05af02dd422c1d9b20e2b
   }
 }
