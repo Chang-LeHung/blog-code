@@ -12,7 +12,7 @@ all_dir := $(shell python3 scan.py cpp)
 cppfiles := $(wildcard $(all_dir))
 cppobjs += $(patsubst %.cpp, %.out, $(cppfiles))
 cxx = clang++
-cppflags = -fopenmp -g -lpthread -std=c++11
+cppflags = -g -lpthread -std=c++11
 
 all: $(cobjs) $(cppobjs)
 
