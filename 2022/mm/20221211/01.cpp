@@ -15,7 +15,7 @@ int fib(int n)
     }
     else
     {
-        return fib(n-1) + fib(n-2);
+        return fib(n - 1) + fib(n - 2);
     }
 }
 
@@ -33,6 +33,10 @@ int main()
     {
       cout << "no\n";
     }
+  }
+  for(int i = 0; i < 10; ++i)
+  {
+    printf("Hello World\n");
   }
   return 0;
 }
