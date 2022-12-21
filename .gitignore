@@ -3,3 +3,4 @@
 *.dot
 *.xml
 *.json
+*dSYM*/
