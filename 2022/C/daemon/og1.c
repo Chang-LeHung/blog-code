@@ -5,12 +5,14 @@
 #include <string.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <sys/wait.h>
+#include <sys/types.h>
 
 void sig(int no, siginfo_t *info, void* context)
 {
   char s[1024];
   int fd = open("text.txt", O_RDWR | O_CREAT, 0644);
-  sprintf(s, "No = %d pid = %d\n", no , info->si_pid);
+  sprintf(s, "No = %d pid = %d my pid = %d\n", no , info->si_pid, getpid());
   write(fd, s, strlen(s));
   close(fd);
   sync();
@@ -35,7 +37,20 @@ int main()
   }
   else
   {
-    while(1);
+    pid = fork();
+    if(pid == -1)
+    {
+      perror("fork:");
+    }
+    if(pid != 0)
+    {
+      kill(pid, SIGSTOP);
+      wait(NULL);
+    }
+    else
+    {
+      while(1);
+    }
   }
   sleep(1);
   return 0;
