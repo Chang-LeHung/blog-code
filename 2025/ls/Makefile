@@ -4,7 +4,7 @@ build:
 	@go build
 
 run: build
-	@./ls -name Alice -world nihao
+	@./ls -alh
 
 clean:
 	rm ls
