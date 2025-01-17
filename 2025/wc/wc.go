@@ -93,6 +93,15 @@ func (c *CommandLine) DoCountAndPrintRes() {
 		fmt.Printf("%d %d %d\n", lines, wordc, bc)
 	} else {
 		for _, v := range c.Files {
+			stat, err := os.Stat(v)
+			// do pre-checks
+			if err != nil {
+				Fatal(err.Error())
+			}
+			if !stat.Mode().IsRegular() {
+				Fatal(fmt.Sprintf("%s is not a regular file", stat.Name()))
+			}
+
 			f, err := os.Open(v)
 			if err != nil {
 				Fatal(err.Error())
