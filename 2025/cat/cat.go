@@ -8,6 +8,7 @@ import (
 
 const (
 	EXIT_FAILURE = 1
+	EXIT_SUCCESS = 0
 )
 
 type CommandLine struct {
@@ -80,7 +81,7 @@ func main() {
 	c := NewCommandLine(os.Args[1:])
 	if c.ContaineArgs("-h") || c.ContaineArgs("--help") {
 		fmt.Println("Usage: cat [OPTION]... [FILE]...")
-		os.Exit(0)
+		os.Exit(EXIT_SUCCESS)
 	}
 	c.Parse()
 	c.Print()
