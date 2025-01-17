@@ -32,6 +32,8 @@ func (c *CommandLine) Parse() {
 	for _, arg := range c.Args {
 		if arg == "-n" {
 			c.LineNum = true
+		} else if arg[0] == '-' {
+			Fatal("Usage: cat [-n] [FILE]...")
 		} else {
 			c.Files = append(c.Files, arg)
 		}
