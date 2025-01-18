@@ -103,11 +103,11 @@ func (c *CommandLine) DoKill() {
 			AssertError(err)
 			cmd := string(handle)
 			args := strings.Split(cmd, "\x00")
+			if c.Insensitive {
+				c.Pattern = strings.ToLower(c.Pattern)
+				args[0] = strings.ToLower(args[0])
+			}
 			if c.FullMode {
-				if c.Insensitive {
-					c.Pattern = strings.ToLower(c.Pattern)
-					args[0] = strings.ToLower(args[0])
-				}
 				if cmd == c.Pattern {
 					AssertError(err)
 					syscall.Kill(pid, syscall.Signal(c.Sig))
