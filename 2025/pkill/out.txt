@@ -1,0 +1,1018 @@
+execve("/usr/bin/pkill", ["pkill", "aaaaaa"], 0xffffedcfcb08 /* 41 vars */) = 0
+brk(NULL)                               = 0xaaaaca75f000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffb4c47000
+faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=29751, ...}) = 0
+mmap(NULL, 29751, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffb4c3f000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libproc2.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=264616, ...}) = 0
+mmap(NULL, 328080, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xffffb4bbd000
+mmap(0xffffb4bc0000, 262544, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffb4bc0000
+munmap(0xffffb4bbd000, 12288)           = 0
+munmap(0xffffb4c01000, 49552)           = 0
+mprotect(0xffffb4bf0000, 40960, PROT_NONE) = 0
+mmap(0xffffb4bfa000, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3a000) = 0xffffb4bfa000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\360\206\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1722920, ...}) = 0
+mmap(NULL, 1892240, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xffffb49f2000
+mmap(0xffffb4a00000, 1826704, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffb4a00000
+munmap(0xffffb49f2000, 57344)           = 0
+munmap(0xffffb4bbe000, 8080)            = 0
+mprotect(0xffffb4b9a000, 77824, PROT_NONE) = 0
+mmap(0xffffb4bad000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19d000) = 0xffffb4bad000
+mmap(0xffffb4bb2000, 49040, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffffb4bb2000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libsystemd.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=989464, ...}) = 0
+mmap(NULL, 1055528, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xffffb48fe000
+mmap(0xffffb4900000, 989992, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffb4900000
+munmap(0xffffb48fe000, 8192)            = 0
+munmap(0xffffb49f2000, 56104)           = 0
+mprotect(0xffffb49d7000, 57344, PROT_NONE) = 0
+mmap(0xffffb49e5000, 53248, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe5000) = 0xffffb49e5000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libcap.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\320}\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=67704, ...}) = 0
+mmap(NULL, 196696, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xffffb48cf000
+mmap(0xffffb48d0000, 131160, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffb48d0000
+munmap(0xffffb48cf000, 4096)            = 0
+munmap(0xffffb48f1000, 57432)           = 0
+mprotect(0xffffb48db000, 81920, PROT_NONE) = 0
+mmap(0xffffb48ef000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0xffffb48ef000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libgcrypt.so.20", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1000536, ...}) = 0
+mmap(NULL, 1131128, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xffffb47bb000
+mmap(0xffffb47c0000, 1065592, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffb47c0000
+munmap(0xffffb47bb000, 20480)           = 0
+munmap(0xffffb48c5000, 41592)           = 0
+mprotect(0xffffb48a6000, 86016, PROT_NONE) = 0
+mmap(0xffffb48bb000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xeb000) = 0xffffb48bb000
+mmap(0xffffb48c4000, 632, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffffb48c4000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/liblz4.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=133136, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffb4c3d000
+mmap(NULL, 262256, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xffffb477f000
+mmap(0xffffb4780000, 196720, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffb4780000
+munmap(0xffffb477f000, 4096)            = 0
+munmap(0xffffb47b1000, 57456)           = 0
+mprotect(0xffffb479e000, 69632, PROT_NONE) = 0
+mmap(0xffffb47af000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f000) = 0xffffb47af000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/liblzma.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=198584, ...}) = 0
+mmap(NULL, 327696, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xffffb472f000
+mmap(0xffffb4730000, 262160, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffb4730000
+munmap(0xffffb472f000, 4096)            = 0
+munmap(0xffffb4771000, 57360)           = 0
+mprotect(0xffffb475e000, 69632, PROT_NONE) = 0
+mmap(0xffffb476f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000) = 0xffffb476f000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libzstd.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=657432, ...}) = 0
+mmap(NULL, 786576, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xffffb466f000
+mmap(0xffffb4670000, 721040, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffb4670000
+munmap(0xffffb466f000, 4096)            = 0
+munmap(0xffffb4721000, 57488)           = 0
+mprotect(0xffffb470b000, 81920, PROT_NONE) = 0
+mmap(0xffffb471f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9f000) = 0xffffb471f000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libgpg-error.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=198648, ...}) = 0
+mmap(NULL, 328032, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xffffb461f000
+mmap(0xffffb4620000, 262496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffb4620000
+munmap(0xffffb461f000, 4096)            = 0
+munmap(0xffffb4661000, 57696)           = 0
+mprotect(0xffffb4644000, 110592, PROT_NONE) = 0
+mmap(0xffffb465f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000) = 0xffffb465f000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffb4c3b000
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffb4c38000
+set_tid_address(0xffffb4c380f0)         = 46698
+set_robust_list(0xffffb4c38100, 24)     = 0
+rseq(0xffffb4c38740, 0x20, 0, 0xd428bc00) = 0
+mprotect(0xffffb4bad000, 12288, PROT_READ) = 0
+mprotect(0xffffb465f000, 4096, PROT_READ) = 0
+mprotect(0xffffb471f000, 4096, PROT_READ) = 0
+mprotect(0xffffb476f000, 4096, PROT_READ) = 0
+mprotect(0xffffb47af000, 4096, PROT_READ) = 0
+mprotect(0xffffb48bb000, 20480, PROT_READ) = 0
+mprotect(0xffffb48ef000, 4096, PROT_READ) = 0
+mprotect(0xffffb49e5000, 45056, PROT_READ) = 0
+mprotect(0xffffb4bfa000, 24576, PROT_READ) = 0
+mprotect(0xaaaaad72f000, 4096, PROT_READ) = 0
+mprotect(0xffffb4c4c000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0xffffb4c3f000, 29751)           = 0
+getrandom("\xf5\x30\x17\xe2\xf1\xf7\x4e\x45", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0xaaaaca75f000
+brk(0xaaaaca780000)                     = 0xaaaaca780000
+prctl(PR_CAPBSET_READ, CAP_MAC_OVERRIDE) = 0
+prctl(PR_CAPBSET_READ, 0x30 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+prctl(PR_CAPBSET_READ, CAP_CHECKPOINT_RESTORE) = 0
+prctl(PR_CAPBSET_READ, 0x2c /* CAP_??? */) = -1 EINVAL (Invalid argument)
+prctl(PR_CAPBSET_READ, 0x2a /* CAP_??? */) = -1 EINVAL (Invalid argument)
+prctl(PR_CAPBSET_READ, 0x29 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+epoll_create1(0)                        = 3
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/en_US.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/en_US.utf8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/en_US/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/en.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/en.utf8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/en/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+getpid()                                = 46698
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffb45ff000
+mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffb45de000
+brk(0xaaaaca7a1000)                     = 0xaaaaca7a1000
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=29751, ...}) = 0
+mmap(NULL, 29751, PROT_READ, MAP_PRIVATE, 4, 0) = 0xffffb4c3f000
+close(4)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libnuma.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/lib/aarch64-linux-gnu/", {st_mode=S_IFDIR|0755, st_size=36864, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/libnuma.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/", {st_mode=S_IFDIR|0755, st_size=36864, ...}, 0) = 0
+openat(AT_FDCWD, "/lib/libnuma.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/lib/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/libnuma.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+munmap(0xffffb4c3f000, 29751)           = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=29751, ...}) = 0
+mmap(NULL, 29751, PROT_READ, MAP_PRIVATE, 4, 0) = 0xffffb4c3f000
+close(4)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libnuma.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/libnuma.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/libnuma.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/libnuma.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+munmap(0xffffb4c3f000, 29751)           = 0
+newfstatat(AT_FDCWD, "/proc/self/task", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+brk(0xaaaaca7c6000)                     = 0xaaaaca7c6000
+mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffb45bd000
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.40 427364.65\n", 1024)  = 20
+close(5)                                = 0
+getdents64(4, 0xaaaaca79d110 /* 101 entries */, 32768) = 2992
+newfstatat(AT_FDCWD, "/proc/1", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/1/stat", O_RDONLY) = 5
+read(5, "1 (bash) S 0 1 1 34816 19 419456"..., 1024) = 327
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/1/status", O_RDONLY) = 5
+read(5, "Name:\tbash\nUmask:\t0022\nState:\tS "..., 1024) = 1016
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/1/cmdline", O_RDONLY) = 5
+read(5, "/bin/bash\0", 131072)          = 10
+read(5, "", 131062)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/1/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/1/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/tty/drivers", O_RDONLY) = 5
+read(5, "/dev/tty             /dev/tty   "..., 9999) = 517
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/dev/pts0", 0xfffff583de78, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/dev/pts/0", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, 0) = 0
+brk(0xaaaaca7e7000)                     = 0xaaaaca7e7000
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.41 427364.67\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/19", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/19/stat", O_RDONLY) = 5
+read(5, "19 (zsh) S 1 19 1 34816 19 41945"..., 1024) = 318
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/19/status", O_RDONLY) = 5
+read(5, "Name:\tzsh\nUmask:\t0022\nState:\tS ("..., 1024) = 1020
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/19/cmdline", O_RDONLY) = 5
+read(5, "zsh\0", 131072)                = 4
+read(5, "", 131068)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/19/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/19/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/dev/pts0", 0xfffff583de78, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/dev/pts/0", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, 0) = 0
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.42 427364.69\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/72", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/72/stat", O_RDONLY) = 5
+read(5, "72 (sh) S 0 72 72 0 -1 4194560 1"..., 1024) = 310
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/72/status", O_RDONLY) = 5
+read(5, "Name:\tsh\nUmask:\t0022\nState:\tS (s"..., 1024) = 1023
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/72/cmdline", O_RDONLY) = 5
+read(5, "/bin/sh\0", 131072)            = 8
+read(5, "", 131064)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/72/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/72/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.42 427364.70\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/199", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/199/stat", O_RDONLY) = 5
+read(5, "199 (sh) S 0 199 199 0 -1 419456"..., 1024) = 301
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/199/status", O_RDONLY) = 5
+read(5, "Name:\tsh\nUmask:\t0022\nState:\tS (s"..., 1024) = 1024
+read(5, "", 1024)                       = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/199/cmdline", O_RDONLY) = 5
+read(5, "/bin/sh\0", 131072)            = 8
+read(5, "", 131064)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/199/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/199/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.43 427364.72\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/211", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/211/stat", O_RDONLY) = 5
+read(5, "211 (node) S 199 199 199 0 -1 41"..., 2048) = 291
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/211/status", O_RDONLY) = 5
+read(5, "Name:\tnode\nUmask:\t0022\nState:\tS "..., 2048) = 1033
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/211/cmdline", O_RDONLY) = 5
+read(5, "/root/.vscode-server/bin/91fbddd"..., 131072) = 148
+read(5, "", 130924)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/211/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/211/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.43 427364.72\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/212", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/212/stat", O_RDONLY) = 5
+read(5, "212 (sh) S 0 212 212 0 -1 419456"..., 2048) = 301
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/212/status", O_RDONLY) = 5
+read(5, "Name:\tsh\nUmask:\t0022\nState:\tS (s"..., 2048) = 1024
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/212/cmdline", O_RDONLY) = 5
+read(5, "sh\0/root/.vscode-server/bin/91fb"..., 131072) = 509
+read(5, "", 130563)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/212/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/212/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.44 427364.73\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/221", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/221/stat", O_RDONLY) = 5
+read(5, "221 (node) S 212 212 212 0 -1 41"..., 2048) = 312
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/221/status", O_RDONLY) = 5
+read(5, "Name:\tnode\nUmask:\t0022\nState:\tS "..., 2048) = 1038
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/221/cmdline", O_RDONLY) = 5
+read(5, "/root/.vscode-server/bin/91fbddd"..., 131072) = 580
+read(5, "", 130492)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/221/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/221/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.45 427364.75\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/309", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/309/stat", O_RDONLY) = 5
+read(5, "309 (node) S 0 309 309 0 -1 4194"..., 2048) = 284
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/309/status", O_RDONLY) = 5
+read(5, "Name:\tnode\nUmask:\t0022\nState:\tS "..., 2048) = 1033
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/309/cmdline", O_RDONLY) = 5
+read(5, "/root/.vscode-server/bin/91fbddd"..., 131072) = 1023
+read(5, "", 130049)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/309/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/309/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.45 427364.76\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/322", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/322/stat", O_RDONLY) = 5
+read(5, "322 (node) S 0 322 322 0 -1 4194"..., 2048) = 283
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/322/status", O_RDONLY) = 5
+read(5, "Name:\tnode\nUmask:\t0022\nState:\tS "..., 2048) = 1032
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/322/cmdline", O_RDONLY) = 5
+read(5, "/root/.vscode-server/bin/91fbddd"..., 131072) = 1023
+read(5, "", 130049)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/322/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/322/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.46 427364.78\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/335", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/335/stat", O_RDONLY) = 5
+read(5, "335 (node) S 221 212 212 0 -1 41"..., 2048) = 287
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/335/status", O_RDONLY) = 5
+read(5, "Name:\tnode\nUmask:\t0022\nState:\tS "..., 2048) = 1035
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/335/cmdline", O_RDONLY) = 5
+read(5, "/root/.vscode-server/bin/91fbddd"..., 131072) = 175
+read(5, "", 130897)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/335/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/335/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.46 427364.79\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/366", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/366/stat", O_RDONLY) = 5
+read(5, "366 (node) S 221 212 212 0 -1 41"..., 2048) = 317
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/366/status", O_RDONLY) = 5
+read(5, "Name:\tnode\nUmask:\t0022\nState:\tS "..., 2048) = 1042
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/366/cmdline", O_RDONLY) = 5
+read(5, "/root/.vscode-server/bin/91fbddd"..., 131072) = 242
+read(5, "", 130830)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/366/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/366/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.47 427364.81\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/457", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/457/stat", O_RDONLY) = 5
+read(5, "457 (node) S 221 212 212 0 -1 41"..., 2048) = 307
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/457/status", O_RDONLY) = 5
+read(5, "Name:\tnode\nUmask:\t0022\nState:\tS "..., 2048) = 1038
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/457/cmdline", O_RDONLY) = 5
+read(5, "/root/.vscode-server/bin/91fbddd"..., 131072) = 229
+read(5, "", 130843)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/457/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/457/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.48 427364.82\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/599", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/599/stat", O_RDONLY) = 5
+read(5, "599 (sh) S 0 599 599 0 -1 419456"..., 2048) = 301
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/599/status", O_RDONLY) = 5
+read(5, "Name:\tsh\nUmask:\t0022\nState:\tS (s"..., 2048) = 1025
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/599/cmdline", O_RDONLY) = 5
+read(5, "/bin/sh\0", 131072)            = 8
+read(5, "", 131064)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/599/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/599/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.48 427364.84\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/646", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/646/stat", O_RDONLY) = 5
+read(5, "646 (node) S 599 599 599 0 -1 41"..., 2048) = 289
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/646/status", O_RDONLY) = 5
+read(5, "Name:\tnode\nUmask:\t0022\nState:\tS "..., 2048) = 1033
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/646/cmdline", O_RDONLY) = 5
+read(5, "/root/.vscode-server/bin/91fbddd"..., 131072) = 148
+read(5, "", 130924)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/646/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/646/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.50 427364.86\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/910", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/910/stat", O_RDONLY) = 5
+read(5, "910 (clangd.main) S 366 212 212 "..., 2048) = 332
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/910/status", O_RDONLY) = 5
+read(5, "Name:\tclangd.main\nUmask:\t0022\nSt"..., 2048) = 1038
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/910/cmdline", O_RDONLY) = 5
+read(5, "/usr/bin/clangd\0-log=verbose\0-pr"..., 131072) = 112
+read(5, "", 130960)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/910/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/910/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.51 427364.89\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/1116", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/1116/stat", O_RDONLY) = 5
+read(5, "1116 (zsh) S 457 1116 1116 34818"..., 2048) = 328
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/1116/status", O_RDONLY) = 5
+read(5, "Name:\tzsh\nUmask:\t0022\nState:\tS ("..., 2048) = 1035
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/1116/cmdline", O_RDONLY) = 5
+read(5, "/bin/zsh\0-i\0", 131072)       = 12
+read(5, "", 131060)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/1116/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/1116/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/dev/pts2", 0xfffff583de78, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/dev/pts/2", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x2), ...}, 0) = 0
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.51 427364.90\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/30376", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/30376/stat", O_RDONLY) = 5
+read(5, "30376 (sh) S 0 30376 30376 0 -1 "..., 2048) = 313
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30376/status", O_RDONLY) = 5
+read(5, "Name:\tsh\nUmask:\t0022\nState:\tS (s"..., 2048) = 1038
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30376/cmdline", O_RDONLY) = 5
+read(5, "/bin/sh\0", 131072)            = 8
+read(5, "", 131064)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30376/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30376/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.52 427364.92\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/30572", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/30572/stat", O_RDONLY) = 5
+read(5, "30572 (sh) S 0 30572 30572 0 -1 "..., 2048) = 309
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30572/status", O_RDONLY) = 5
+read(5, "Name:\tsh\nUmask:\t0022\nState:\tS (s"..., 2048) = 1037
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30572/cmdline", O_RDONLY) = 5
+read(5, "/bin/sh\0", 131072)            = 8
+read(5, "", 131064)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30572/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30572/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.52 427364.93\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/30637", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/30637/stat", O_RDONLY) = 5
+read(5, "30637 (node) S 30572 30572 30572"..., 2048) = 298
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30637/status", O_RDONLY) = 5
+read(5, "Name:\tnode\nUmask:\t0022\nState:\tS "..., 2048) = 1047
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30637/cmdline", O_RDONLY) = 5
+read(5, "/root/.vscode-server/bin/91fbddd"..., 131072) = 148
+read(5, "", 130924)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30637/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30637/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.53 427364.95\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/30817", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/30817/stat", O_RDONLY) = 5
+read(5, "30817 (node) S 0 30817 30817 0 -"..., 2048) = 292
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30817/status", O_RDONLY) = 5
+read(5, "Name:\tnode\nUmask:\t0022\nState:\tS "..., 2048) = 1045
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30817/cmdline", O_RDONLY) = 5
+read(5, "/root/.vscode-server/bin/91fbddd"..., 131072) = 1023
+read(5, "", 130049)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30817/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30817/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.55 427364.98\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/30833", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/30833/stat", O_RDONLY) = 5
+read(5, "30833 (node) S 0 30833 30833 0 -"..., 2048) = 293
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30833/status", O_RDONLY) = 5
+read(5, "Name:\tnode\nUmask:\t0022\nState:\tS "..., 2048) = 1046
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30833/cmdline", O_RDONLY) = 5
+read(5, "/root/.vscode-server/bin/91fbddd"..., 131072) = 1023
+read(5, "", 130049)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30833/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30833/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.55 427365.00\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/30844", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/30844/stat", O_RDONLY) = 5
+read(5, "30844 (node) S 221 212 212 0 -1 "..., 2048) = 319
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30844/status", O_RDONLY) = 5
+read(5, "Name:\tnode\nUmask:\t0022\nState:\tS "..., 2048) = 1050
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30844/cmdline", O_RDONLY) = 5
+read(5, "/root/.vscode-server/bin/91fbddd"..., 131072) = 242
+read(5, "", 130830)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30844/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30844/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.56 427365.02\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/30901", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/30901/stat", O_RDONLY) = 5
+read(5, "30901 (node) S 221 212 212 0 -1 "..., 2048) = 292
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30901/status", O_RDONLY) = 5
+read(5, "Name:\tnode\nUmask:\t0022\nState:\tS "..., 2048) = 1044
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30901/cmdline", O_RDONLY) = 5
+read(5, "/root/.vscode-server/bin/91fbddd"..., 131072) = 175
+read(5, "", 130897)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30901/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30901/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.56 427365.03\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/30992", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/30992/stat", O_RDONLY) = 5
+read(5, "30992 (node) S 30844 212 212 0 -"..., 2048) = 292
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30992/status", O_RDONLY) = 5
+read(5, "Name:\tnode\nUmask:\t0022\nState:\tS "..., 2048) = 1044
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30992/cmdline", O_RDONLY) = 5
+read(5, "/root/.vscode-server/bin/91fbddd"..., 131072) = 238
+read(5, "", 130834)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30992/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/30992/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.57 427365.04\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/31238", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/31238/stat", O_RDONLY) = 5
+read(5, "31238 (node) S 30844 212 212 0 -"..., 2048) = 290
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/31238/status", O_RDONLY) = 5
+read(5, "Name:\tnode\nUmask:\t0022\nState:\tS "..., 2048) = 1044
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/31238/cmdline", O_RDONLY) = 5
+read(5, "/root/.vscode-server/bin/91fbddd"..., 131072) = 232
+read(5, "", 130840)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/31238/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/31238/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.57 427365.06\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/34372", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/34372/stat", O_RDONLY) = 5
+read(5, "34372 (sh) S 30844 212 212 0 -1 "..., 2048) = 307
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/34372/status", O_RDONLY) = 5
+read(5, "Name:\tsh\nUmask:\t0022\nState:\tS (s"..., 2048) = 1036
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/34372/cmdline", O_RDONLY) = 5
+read(5, "/bin/sh\0-c\0/root/.lingma/bin/2.0"..., 131072) = 62
+read(5, "", 131010)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/34372/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/34372/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.58 427365.07\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/34373", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/34373/stat", O_RDONLY) = 5
+read(5, "34373 (Lingma) S 34372 212 212 0"..., 2048) = 303
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/34373/status", O_RDONLY) = 5
+read(5, "Name:\tLingma\nUmask:\t0022\nState:\t"..., 2048) = 1047
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/34373/cmdline", O_RDONLY) = 5
+read(5, "/root/.lingma/bin/2.0.6/aarch64_"..., 131072) = 51
+read(5, "", 131021)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/34373/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/34373/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.58 427365.08\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/42261", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/42261/stat", O_RDONLY) = 5
+read(5, "42261 (gopls) S 30844 212 212 0 "..., 2048) = 312
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/42261/status", O_RDONLY) = 5
+read(5, "Name:\tgopls\nUmask:\t0022\nState:\tS"..., 2048) = 1044
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/42261/cmdline", O_RDONLY) = 5
+read(5, "/root/go/bin/gopls\0-mode=stdio\0", 131072) = 31
+read(5, "", 131041)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/42261/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/42261/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.59 427365.10\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/42270", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/42270/stat", O_RDONLY) = 5
+read(5, "42270 (gopls) S 42261 42270 4227"..., 2048) = 292
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/42270/status", O_RDONLY) = 5
+read(5, "Name:\tgopls\nUmask:\t0022\nState:\tS"..., 2048) = 1046
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/42270/cmdline", O_RDONLY) = 5
+read(5, "/root/go/bin/gopls\0** telemetry "..., 131072) = 35
+read(5, "", 131037)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/42270/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/42270/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.59 427365.11\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/42558", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/42558/stat", O_RDONLY) = 5
+read(5, "42558 (zsh) S 457 42558 42558 34"..., 2048) = 342
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/42558/status", O_RDONLY) = 5
+read(5, "Name:\tzsh\nUmask:\t0022\nState:\tS ("..., 2048) = 1043
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/42558/cmdline", O_RDONLY) = 5
+read(5, "/bin/zsh\0-i\0", 131072)       = 12
+read(5, "", 131060)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/42558/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/42558/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/dev/pts5", 0xfffff583de78, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/dev/pts/5", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x5), ...}, 0) = 0
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.60 427365.13\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/45625", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/45625/stat", O_RDONLY) = 5
+read(5, "45625 (sh) S 0 45625 45625 0 -1 "..., 2048) = 314
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/45625/status", O_RDONLY) = 5
+read(5, "Name:\tsh\nUmask:\t0022\nState:\tS (s"..., 2048) = 1037
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/45625/cmdline", O_RDONLY) = 5
+read(5, "/bin/sh\0-c\0# Watch installed ext"..., 131072) = 284
+read(5, "", 130788)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/45625/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/45625/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.60 427365.14\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/45633", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/45633/stat", O_RDONLY) = 5
+read(5, "45633 (sh) S 0 45633 45633 0 -1 "..., 2048) = 314
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/45633/status", O_RDONLY) = 5
+read(5, "Name:\tsh\nUmask:\t0022\nState:\tS (s"..., 2048) = 1038
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/45633/cmdline", O_RDONLY) = 5
+read(5, "/bin/sh\0-c\0# Watch installed ext"..., 131072) = 284
+read(5, "", 130788)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/45633/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/45633/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.61 427365.15\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/45964", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/45964/stat", O_RDONLY) = 5
+read(5, "45964 (sh) S 0 45964 45964 0 -1 "..., 2048) = 313
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/45964/status", O_RDONLY) = 5
+read(5, "Name:\tsh\nUmask:\t0022\nState:\tS (s"..., 2048) = 1037
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/45964/cmdline", O_RDONLY) = 5
+read(5, "/bin/sh\0-c\0# Watch machine setti"..., 131072) = 348
+read(5, "", 130724)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/45964/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/45964/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.61 427365.17\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/46339", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/46339/stat", O_RDONLY) = 5
+read(5, "46339 (sh) S 0 46339 46339 0 -1 "..., 2048) = 313
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46339/status", O_RDONLY) = 5
+read(5, "Name:\tsh\nUmask:\t0022\nState:\tS (s"..., 2048) = 1036
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46339/cmdline", O_RDONLY) = 5
+read(5, "/bin/sh\0-c\0# Watch machine setti"..., 131072) = 348
+read(5, "", 130724)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46339/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46339/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.62 427365.18\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/46683", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/46683/stat", O_RDONLY) = 5
+read(5, "46683 (sleep) S 45625 45625 4562"..., 2048) = 313
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46683/status", O_RDONLY) = 5
+read(5, "Name:\tsleep\nUmask:\t0022\nState:\tS"..., 2048) = 1042
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46683/cmdline", O_RDONLY) = 5
+read(5, "sleep\0001\0", 131072)         = 8
+read(5, "", 131064)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46683/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46683/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.62 427365.19\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/46685", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/46685/stat", O_RDONLY) = 5
+read(5, "46685 (sleep) S 45633 45633 4563"..., 2048) = 313
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46685/status", O_RDONLY) = 5
+read(5, "Name:\tsleep\nUmask:\t0022\nState:\tS"..., 2048) = 1042
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46685/cmdline", O_RDONLY) = 5
+read(5, "sleep\0001\0", 131072)         = 8
+read(5, "", 131064)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46685/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46685/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.63 427365.20\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/46692", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/46692/stat", O_RDONLY) = 5
+read(5, "46692 (strace) S 42558 46692 425"..., 2048) = 333
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46692/status", O_RDONLY) = 5
+read(5, "Name:\tstrace\nUmask:\t0022\nState:\t"..., 2048) = 1047
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46692/cmdline", O_RDONLY) = 5
+read(5, "strace\0-o\0out.txt\0pkill\0aaaaaa\0", 131072) = 31
+read(5, "", 131041)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46692/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46692/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/dev/pts5", 0xfffff583de78, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/dev/pts/5", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x5), ...}, 0) = 0
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.64 427365.22\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/46693", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/46693/stat", O_RDONLY) = 5
+read(5, "46693 (sleep) S 45964 45964 4596"..., 2048) = 313
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46693/status", O_RDONLY) = 5
+read(5, "Name:\tsleep\nUmask:\t0022\nState:\tS"..., 2048) = 1042
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46693/cmdline", O_RDONLY) = 5
+read(5, "sleep\0001\0", 131072)         = 8
+read(5, "", 131064)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46693/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46693/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.64 427365.23\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/46695", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/46695/stat", O_RDONLY) = 5
+read(5, "46695 (sleep) S 46339 46339 4633"..., 2048) = 313
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46695/status", O_RDONLY) = 5
+read(5, "Name:\tsleep\nUmask:\t0022\nState:\tS"..., 2048) = 1042
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46695/cmdline", O_RDONLY) = 5
+read(5, "sleep\0001\0", 131072)         = 8
+read(5, "", 131064)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46695/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46695/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.65 427365.25\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/46698", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/46698/stat", O_RDONLY) = 5
+read(5, "46698 (pkill) R 46692 46692 4255"..., 2048) = 319
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46698/status", O_RDONLY) = 5
+read(5, "Name:\tpkill\nUmask:\t0022\nState:\tR"..., 2048) = 1048
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46698/cmdline", O_RDONLY) = 5
+read(5, "pkill\0aaaaaa\0", 131072)      = 13
+read(5, "", 131059)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46698/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/46698/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/dev/pts5", 0xfffff583de78, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/dev/pts/5", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x5), ...}, 0) = 0
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.65 427365.26\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/99522", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/99522/stat", O_RDONLY) = 5
+read(5, "99522 (pet) S 30844 212 212 0 -1"..., 2048) = 283
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/99522/status", O_RDONLY) = 5
+read(5, "Name:\tpet\nUmask:\t0022\nState:\tS ("..., 2048) = 1039
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/99522/cmdline", O_RDONLY) = 5
+read(5, "/root/.vscode-server/extensions/"..., 131072) = 91
+read(5, "", 130981)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/99522/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/99522/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.66 427365.27\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/99707", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/99707/stat", O_RDONLY) = 5
+read(5, "99707 (zsh) S 457 99707 99707 34"..., 2048) = 334
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/99707/status", O_RDONLY) = 5
+read(5, "Name:\tzsh\nUmask:\t0022\nState:\tS ("..., 2048) = 1040
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/99707/cmdline", O_RDONLY) = 5
+read(5, "/bin/zsh\0-i\0", 131072)       = 12
+read(5, "", 131060)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/99707/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/99707/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/dev/pts4", 0xfffff583de78, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/dev/pts/4", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x4), ...}, 0) = 0
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.67 427365.28\n", 1024)  = 20
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/proc/99781", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/proc/99781/stat", O_RDONLY) = 5
+read(5, "99781 (node) S 30844 212 212 0 -"..., 2048) = 301
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/99781/status", O_RDONLY) = 5
+read(5, "Name:\tnode\nUmask:\t0022\nState:\tS "..., 2048) = 1045
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/99781/cmdline", O_RDONLY) = 5
+read(5, "/root/.vscode-server/bin/91fbddd"..., 131072) = 265
+read(5, "", 130807)                     = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/99781/cgroup", O_RDONLY) = 5
+read(5, "0::/\n", 2047)                 = 5
+close(5)                                = 0
+openat(AT_FDCWD, "/proc/99781/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(5, "113469.67 427365.30\n", 1024)  = 20
+close(5)                                = 0
+getdents64(4, 0xaaaaca79d110 /* 0 entries */, 32768) = 0
+close(4)                                = 0
+munmap(0xffffb45ff000, 135168)          = 0
+munmap(0xffffb45de000, 135168)          = 0
+close(1)                                = 0
+close(2)                                = 0
+exit_group(1)                           = ?
++++ exited with 1 +++
