@@ -7,6 +7,7 @@ import (
 	"runtime"
 	"strconv"
 	"strings"
+	"time"
 
 	"github.com/olekukonko/tablewriter"
 )
@@ -42,12 +43,24 @@ func AssertError(err error) {
 }
 
 type CommandLine struct {
-	Args     []string
-	Free     int
-	Buffer   int
-	Cache    int
-	Avaiable int
-	Loaded   bool
+	Args       []string
+	Free       int
+	Buffer     int
+	Cache      int
+	Avaiable   int
+	Loaded     bool
+	Running    int
+	Blocked    int
+	Interrupts int
+	BootTime   int
+	in         int // interrupts per second
+	cs         int // context switch
+	us         int // user mode
+	sy         int // system mode
+	id         int // idle
+	wa         int // waiting for disk
+	st         int // stolen time
+	gu         int // gust user mode
 }
 
 func NewCommandLine(args []string) *CommandLine {
@@ -66,8 +79,45 @@ func (c *CommandLine) GetMemStatistic() {
 	c.Loaded = true
 }
 
-func (c *CommandLine) loadHardWareInfo() {
+func Str2Int(val string) int {
+	i, err := strconv.Atoi(val)
+	AssertError(err)
+	return i
+}
 
+func (c *CommandLine) loadHardWareInfo() {
+	filename := "/proc/stat"
+	data, err := os.ReadFile(filename)
+	AssertError(err)
+	content := string(data)
+	for _, line := range strings.Split(content, "\n") {
+		if len(line) == 0 {
+			continue
+		}
+		fileds := strings.Fields(line)
+		Assert(len(fileds) > 0, fmt.Sprintf("Invalid line, fileds:%v, line:%v", fileds, line))
+		if fileds[0] == "cpu" {
+			c.us = Str2Int(fileds[1])
+			c.sy = Str2Int(fileds[3])
+			c.id = Str2Int(fileds[4])
+			c.wa = Str2Int(fileds[5])
+			c.st = Str2Int(fileds[8])
+			c.gu = Str2Int(fileds[10])
+		} else if fileds[0] == "ctxt" {
+			c.cs = Str2Int(fileds[1])
+		} else if fileds[0] == "procs_running" {
+			c.Running = Str2Int(fileds[1])
+		} else if fileds[0] == "procs_blocked" {
+			c.Blocked = Str2Int(fileds[1])
+		} else if fileds[0] == "intr" {
+			c.Interrupts = Str2Int(fileds[1])
+		} else if fileds[0] == "btime" {
+			c.BootTime = Str2Int(fileds[1])
+		}
+	}
+	elpased := (int(time.Now().Unix()) - c.BootTime)
+	c.in = c.Interrupts / elpased
+	c.cs /= elpased
 }
 
 func (c *CommandLine) loadMemInfo() {
@@ -110,13 +160,23 @@ func (c *CommandLine) loadMemInfo() {
 func (c *CommandLine) Print() {
 	c.GetMemStatistic()
 	table := tablewriter.NewWriter(os.Stdout)
-	table.SetHeader([]string{"Buffer", "Free", "Cache", "available"})
-	table.Append([]string{
-		strconv.Itoa(c.Buffer/1024) + " mB",
-		strconv.Itoa(c.Free/1024) + " mB",
-		strconv.Itoa(c.Cache/1024) + " mB",
-		strconv.Itoa(c.Avaiable/1024) + " mB",
-	})
+	table.SetHeader([]string{"Name", "value"})
+	table.AppendBulk(
+		[][]string{
+			[]string{"Free", fmt.Sprintf("%d kb", c.Free)},
+			[]string{"Cache", fmt.Sprintf("%d kb", c.Cache)},
+			[]string{"Avaiable", fmt.Sprintf("%d kb", c.Avaiable)},
+			[]string{"Buffer", fmt.Sprintf("%d kb", c.Buffer)},
+			[]string{"Running", fmt.Sprintf("%d", c.Running)},
+			[]string{"Blocked", fmt.Sprintf("%d", c.Blocked)},
+			[]string{"in", fmt.Sprintf("%d", c.in)},
+			[]string{"cs", fmt.Sprintf("%d", c.cs)},
+			[]string{"us", fmt.Sprintf("%d", c.us)},
+			[]string{"sy", fmt.Sprintf("%d", c.sy)},
+			[]string{"wa", fmt.Sprintf("%d", c.wa)},
+			[]string{"st", fmt.Sprintf("%d", c.st)},
+			[]string{"gu", fmt.Sprintf("%d", c.gu)},
+		})
 	table.Render()
 }
 
