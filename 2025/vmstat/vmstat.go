@@ -163,19 +163,19 @@ func (c *CommandLine) Print() {
 	table.SetHeader([]string{"Name", "value"})
 	table.AppendBulk(
 		[][]string{
-			[]string{"Free", fmt.Sprintf("%d kb", c.Free)},
-			[]string{"Cache", fmt.Sprintf("%d kb", c.Cache)},
-			[]string{"Avaiable", fmt.Sprintf("%d kb", c.Avaiable)},
-			[]string{"Buffer", fmt.Sprintf("%d kb", c.Buffer)},
-			[]string{"Running", fmt.Sprintf("%d", c.Running)},
-			[]string{"Blocked", fmt.Sprintf("%d", c.Blocked)},
-			[]string{"in", fmt.Sprintf("%d", c.in)},
-			[]string{"cs", fmt.Sprintf("%d", c.cs)},
-			[]string{"us", fmt.Sprintf("%d", c.us)},
-			[]string{"sy", fmt.Sprintf("%d", c.sy)},
-			[]string{"wa", fmt.Sprintf("%d", c.wa)},
-			[]string{"st", fmt.Sprintf("%d", c.st)},
-			[]string{"gu", fmt.Sprintf("%d", c.gu)},
+			{"Free", fmt.Sprintf("%d kb", c.Free)},
+			{"Cache", fmt.Sprintf("%d kb", c.Cache)},
+			{"Avaiable", fmt.Sprintf("%d kb", c.Avaiable)},
+			{"Buffer", fmt.Sprintf("%d kb", c.Buffer)},
+			{"Running", fmt.Sprintf("%d", c.Running)},
+			{"Blocked", fmt.Sprintf("%d", c.Blocked)},
+			{"in", fmt.Sprintf("%d", c.in)},
+			{"cs", fmt.Sprintf("%d", c.cs)},
+			{"us", fmt.Sprintf("%d", c.us)},
+			{"sy", fmt.Sprintf("%d", c.sy)},
+			{"wa", fmt.Sprintf("%d", c.wa)},
+			{"st", fmt.Sprintf("%d", c.st)},
+			{"gu", fmt.Sprintf("%d", c.gu)},
 		})
 	table.Render()
 }
