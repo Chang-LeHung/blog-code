@@ -2,7 +2,7 @@ import sys
 import ctypes
 
 val = 0xFFF_FFFF_FFFF_FFFF
-print(sys.getsizeof(val))
+print(sys.getsizeof(val))  # 32
 
 addr = id(val) + 16
 ptr = ctypes.cast(addr, ctypes.POINTER(ctypes.c_long))
@@ -13,8 +13,8 @@ else:
 print(size)
 addr = id(val) + 24
 ptr = ctypes.cast(addr, ctypes.POINTER(ctypes.c_int32))
-print(hex(ptr.contents.value))
+print(hex(ptr.contents.value))  # 0x3f_ff_ff_ff
 
 addr = id(val) + 28
 ptr = ctypes.cast(addr, ctypes.POINTER(ctypes.c_int32))
-print(hex(ptr.contents.value))
+print(hex(ptr.contents.value))  # 0x3f_ff_ff_ff
